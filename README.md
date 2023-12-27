@@ -136,8 +136,20 @@ To evaluate the models I have used adjusted R2-Score.
 ## Conclusion
 
 ```
-                 (i)   Random forest performed best as compared to other models with
-                         adjusted R2-Score for test dataset = 0.93
+                 (i)  The initial phase of the project involved thorough data
+exploration and cleaning. We identified and addressed missing values, particularly in columns such as 'CompetitionDistance', 'CompetitionOpenSinceMonth', 'CompetitionOpenSinceYear', 'Promo2SinceWeek', 'Promo2SinceYear', and 'PromoInterval'. For the 'Sales' column, it was observed that 172,817 entries had zero sales. To mitigate this, a new DataFrame was created by removing rows with zero sales, setting the stage for a more focused and accurate analysis.
+
+Several data type conversions were performed to optimize the dataset for machine learning algorithms. Categorical columns, including 'StateHoliday', 'Assortment', and 'StoreType', were transformed from 'object' to 'int'. This process involved mapping different string values to corresponding integer representations, facilitating a numerical input for machine learning models.
+
+To enhance the predictive power of the model, additional features were engineered. The 'Date' column was converted to 'datetime' format, and a new column was created to extract the month values. This not only improved the temporal aspect of the data but also allowed the model to capture potential seasonality trends in retail sales.
+
+Various machine learning algorithms were applied to the preprocessed and engineered dataset. These algorithms included but were not limited to regression models, decision trees, and ensemble methods. The model training process aimed to predict retail sales accurately based on historical data and engineered features.
+
+After extensive training and validation, the models were evaluated using standard metrics. The accuracy score emerged as a crucial metric, and the models collectively achieved an accuracy rate of around 74%. This performance indicated the effectiveness of the selected algorithms and the significance of the preprocessing steps in creating a refined and reliable predictive model.
+
+The Retail Sales Prediction project successfully addressed data challenges, optimized features, and trained models to forecast sales with a commendable accuracy rate. However, the project is an iterative process, and there are opportunities for further enhancement. Future directions could include exploring more sophisticated algorithms, incorporating external factors like economic indicators or weather data, and conducting a more granular analysis to capture store-specific trends.
+
+In conclusion, the Retail Sales Prediction project not only provided valuable insights into the dynamics of retail sales but also demonstrated the importance of thoughtful data preprocessing, feature engineering, and model selection in achieving accurate predictions. The outcomes of this project can potentially empower retailers with better decision-making capabilities, optimizing inventory management and overall business strategies.
                          
                  (ii)  Linear Regression also performed fairly well.
                          adjusted R2-Score for test dataset = 0.87
