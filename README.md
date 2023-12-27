@@ -136,15 +136,9 @@ To evaluate the models I have used adjusted R2-Score.
 ## Conclusion
 
 ```
-                      In conclusion, the Retail Sales Prediction project not only provided valuable insights into the dynamics of retail sales 
-                      but also demonstrated the importance of thoughtful data preprocessing, feature engineering, and model selection in 
-                      achieving accurate predictions. The outcomes of this project can potentially empower retailers with better decision- 
-                      making capabilities, optimizing inventory management and overall business strategies.
-                         
-              
-                          
-                 
-           
-
+In conclusion, the Retail Sales Prediction project not only provided valuable insights into the dynamics of retail sales 
+but also demonstrated the importance of thoughtful data preprocessing, feature engineering, and model selection in 
+achieving accurate predictions. The outcomes of this project can potentially empower retailers with better decision- 
+making capabilities, optimizing inventory management and overall business strategies.
 ```
 
